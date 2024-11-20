@@ -1,0 +1,28 @@
+/* In your global.css file */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.circular {
+  @apply bg-ascent rounded-full w-[40px] h-[40px] flex items-center justify-center;
+}
+
+.set {
+  @apply flex flex-row gap-2 bg-[#F7F8FA] p-2 items-center rounded-xl;
+}
+
+.checked {
+  @apply appearance-none checked:bg-primary checked:border-transparent h-5 w-5 border rounded-md border-gray-300 cursor-pointer;
+}
+
+.general {
+  @apply flex flex-row items-center justify-between w-full px-2;
+}
+
+.font {
+  @apply flex flex-col items-start justify-start w-full px-2 gap-2;
+}
+
+.modal {
+  @apply hover:bg-ascent rounded-lg py-2 px-4 flex flex-row gap-3 items-center;
+}
