@@ -11,7 +11,7 @@ const DuaList = ({ subcategories, duas, selectedCategory }) => {
         .filter((subcat) => subcat.cat_id === selectedCategory)
         .map((subcat) => (
           <div key={subcat.id}>
-            <p className=" bg-white rounded-md px-4 py-2">
+            <p className=" bg-white rounded-md px-4 py-3 font-medium text-base text-[#393939]">
               <span className=" text-primary">Section: </span>{" "}
               {subcat.subcat_name_en}
             </p>

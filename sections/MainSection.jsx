@@ -78,9 +78,9 @@ const MainSection = () => {
   return (
     <div className="flex flex-row gap-2 ">
       <div className=" w-1/3 h-[80vh] bg-white rounded-2xl flex flex-col ">
-        <div className="py-3 w-full bg-primary rounded-t-2xl text-center">
+        <h1 className="py-3 w-full text-[17px] text-[#FFFFFF] font-semibold bg-primary rounded-t-2xl text-center">
           Categories
-        </div>
+        </h1>
         <div className="p-2">
           <div className="relative mt-1">
             <button className="absolute left-0 top-0 mt-2 ml-1 py-2 px-2">
