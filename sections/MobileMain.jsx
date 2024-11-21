@@ -29,7 +29,7 @@ const MobileMainSection = () => {
   }, []);
 
   const fetchCategories = () => {
-    fetch("http://localhost:5000/category")
+    fetch("https://ird-duaruqyah-backend.onrender.com/category")
       .then((response) => {
         if (!response.ok) {
           throw new Error("Failed to fetch categories");
@@ -45,7 +45,7 @@ const MobileMainSection = () => {
   };
 
   const fetchSubCategories = () => {
-    fetch("http://localhost:5000/sub_category")
+    fetch("https://ird-duaruqyah-backend.onrender.com/sub_category")
       .then((response) => {
         if (!response.ok) {
           throw new Error("Failed to fetch categories");
@@ -61,7 +61,7 @@ const MobileMainSection = () => {
   };
 
   const fetchDuas = () => {
-    fetch("http://localhost:5000/dua")
+    fetch("https://ird-duaruqyah-backend.onrender.com/dua")
       .then((response) => {
         if (!response.ok) {
           throw new Error("Failed to fetch categories");

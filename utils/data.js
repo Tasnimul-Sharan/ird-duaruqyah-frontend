@@ -1,5 +1,5 @@
 // const fetchCategories = () => {
-//   fetch("http://localhost:5000/category")
+//   fetch("https://ird-duaruqyah-backend.onrender.com/category")
 //     .then((response) => {
 //       if (!response.ok) {
 //         throw new Error("Failed to fetch categories");
@@ -15,7 +15,7 @@
 // };
 
 // const fetchSubCategories = () => {
-//   fetch("http://localhost:5000/sub_category")
+//   fetch("https://ird-duaruqyah-backend.onrender.com/sub_category")
 //     .then((response) => {
 //       if (!response.ok) {
 //         throw new Error("Failed to fetch categories");
@@ -45,11 +45,11 @@ const fetchData = async (url, setState) => {
 };
 
 const fetchCategories = (setCategories) => {
-  fetchData("http://localhost:5000/category", setCategories);
+  fetchData("https://ird-duaruqyah-backend.onrender.com/category", setCategories);
 };
 
 const fetchSubCategories = (setSubCategories) => {
-  fetchData("http://localhost:5000/sub_category", setSubCategories);
+  fetchData("https://ird-duaruqyah-backend.onrender.com/sub_category", setSubCategories);
 };
 
 export { fetchCategories, fetchSubCategories };
