@@ -26,3 +26,20 @@
 .modal {
   @apply hover:bg-ascent rounded-lg py-2 px-4 flex flex-row gap-3 items-center;
 }
+
+
+.custom-border {
+  border-left: 2px dotted var(--tw-border-color);
+  position: relative;
+}
+.custom-border::before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -4px;
+  width: 8px;
+  height: 8px;
+  background-color: #4f46e5; /* Adjust for primary color */
+  border-radius: 50%;
+  border: 1px solid #4f46e5;
+}

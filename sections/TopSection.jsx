@@ -29,8 +29,6 @@ const TopSection = () => {
   </button>
 </div>
 
-
-      {/* User Icon */}
       <div className="relative flex items-center">
         <div onClick={toggleModal} className="cursor-pointer">
           <Image
