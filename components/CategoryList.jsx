@@ -47,7 +47,6 @@ const CategoryList = ({
             </div>
           </div>
 
-          {/* Subcategories with aligned dashed line */}
           <ul className="ml-6 border-l-2 border-dashed border-primary">
             {selectedCategory === category.cat_id &&
               subcategories
@@ -73,7 +72,6 @@ const CategoryList = ({
                       </p>
                     </div>
 
-                    {/* Duas with aligned dashed line */}
                     <ul className="ml-6 border-l-2 border-dashed border-gray-300">
                       {selectedSubCategory === subcategory.subcat_id &&
                         duas

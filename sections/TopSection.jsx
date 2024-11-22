@@ -36,8 +36,8 @@ const TopSection = () => {
           <Image
             src="/user.png"
             alt="User Icon"
-            width={40}
-            height={40}
+            width={67.5}
+            height={45}
             className="rounded-full"
           />
         </div>
