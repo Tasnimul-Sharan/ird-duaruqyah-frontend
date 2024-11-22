@@ -22,7 +22,7 @@ const DuaList = ({ subcategories, duas, selectedCategory }) => {
                 .map((dua) => (
                   <div key={dua.id} className="my-4">
                     <div className="bg-white rounded-md px-4 py-2 flex flex-col gap-4">
-                      <div className="text-primary mt-2 flex flex-row gap-3">
+                      <div className="text-primary font-semibold text-[16px] mt-2 flex flex-row gap-3">
                         <Image
                           src="/allah_1.png"
                           alt="allah_1"
@@ -31,28 +31,29 @@ const DuaList = ({ subcategories, duas, selectedCategory }) => {
                         />
                         {dua.dua_id}. {dua.dua_name_en}
                       </div>
-                      <div>{dua.top_en}</div>
-                      <div className=" text-right">{dua.dua_arabic}</div>
+                      <div className="font-normal text-[16px] text-[#393939]">{dua.top_en}</div>
+                      <div className="text-right">{dua.dua_arabic}</div>
 
                       {dua.transliteration_en === null ? null : (
-                        <div>
+                        <div className="font-normal text-[16px] text-[#393939]">
                           {" "}
                           <strong>Transliteration:</strong>{" "}
-                          {dua.transliteration_en}
+                          <span className="italic">{dua.transliteration_en}</span>
+                          
                         </div>
                       )}
 
                       {dua.translation_en === null ? null : (
-                        <div>
+                        <div className="font-normal text-[16px] text-[#393939]">
                           {" "}
                           <strong> Translation: </strong>
                           {dua.translation_en}
                         </div>
                       )}
 
-                      <div className="mt-2">
+                      <div className="mt-2 text-[16px] font-medium">
                         <p className="text-primary">Reference:</p>
-                        <p>{dua.refference_en}</p>
+                        <p className="text-[#393939]">{dua.refference_en}</p>
                       </div>
 
                       <div className="flex flex-row justify-between items-center">
@@ -76,40 +77,40 @@ const DuaList = ({ subcategories, duas, selectedCategory }) => {
                               <Image
                                 src="/copy.png"
                                 alt="play"
-                                width={16}
-                                height={16}
+                                width={24}
+                                height={24}
                               />
                             </div>
                             <div>
                               <Image
                                 src="/bookmark.png"
                                 alt="play"
-                                width={13}
-                                height={13}
+                                width={24}
+                                height={24}
                               />
                             </div>
                             <div>
                               <Image
                                 src="/light.png"
                                 alt="play"
-                                width={13}
-                                height={13}
+                                width={24}
+                                height={24}
                               />
                             </div>
                             <div>
                               <Image
                                 src="/share.png"
                                 alt="play"
-                                width={17}
-                                height={17}
+                               width={24}
+                               height={24}
                               />
                             </div>
                             <div>
                               <Image
                                 src="/report.png"
                                 alt="play"
-                                width={16}
-                                height={16}
+                               width={24}
+                               height={24}
                               />
                             </div>
                           </div>

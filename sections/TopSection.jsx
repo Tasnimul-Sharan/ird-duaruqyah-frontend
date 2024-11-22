@@ -11,7 +11,7 @@ const TopSection = () => {
 
   return (
     <div className="flex items-center  justify-between w-full py-4 px-6 bg-gray-100">
-<h1 className="font-semibold">Dua Page</h1>
+<h1 className="font-semibold text-2xl">Dua Page</h1>
 <div className="relative  lg:-mr-96 lg:ml-96 w-[371px] h-[52px]">
   <input
     type="text"

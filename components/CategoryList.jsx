@@ -103,16 +103,20 @@ const CategoryList = ({
           <Image src="/fever.png" alt={category.cat_name_en} width={30} height={30} />
         </div>
 
-        <div className="flex flex-col">
-          <p className="text-sm font-semibold">{category.cat_name_en}</p>
-          <p className="text-xs text-gray-500">
+        <div className="flex flex-col ">
+          <p className="text-[16px] font-semibold">{category.cat_name_en}</p>
+          <p className=" text-[#7E7E7E] font-normal text-[14px]">
             Subcategory: {category.no_of_subcat}
           </p>
         </div>
 
-        <div className="ml-auto text-xs font-semibold">
-          {duas.filter((dua) => dua.cat_id === category.cat_id).length} Duas
-        </div>
+        <div className="ml-auto font-semibold text-[16px] flex flex-col items-center">
+        <span className="text-black">
+          {duas.filter((dua) => dua.cat_id === category.cat_id).length}
+        </span>
+        <span className="text-[#7E7E7E] font-normal text-[14px]">Duas</span>
+      </div>
+
       </div>
 
       <ul className="ml-8 border-l-2 border-dotted border-primary">
