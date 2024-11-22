@@ -13,7 +13,7 @@ const TopSection = () => {
     <div className="flex items-center justify-between w-full py-4 px-6">
       <h1 className="font-semibold text-2xl">Dua Page</h1>
 
-      <div className="relative w-[371px] h-[52px] flex-shrink-0  lg:ml-[31rem]">
+      <div className="relative w-[371px] h-[52px] flex-shrink-0  lg:ml-[33rem]">
         <input
           type="text" 
           placeholder="Search by Dua Name"
@@ -30,7 +30,6 @@ const TopSection = () => {
         </button>
       </div>
 
-      {/* User Icon Section */}
       <div className="relative flex items-center">
         <div onClick={toggleModal} className="cursor-pointer">
           <Image
