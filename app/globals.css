@@ -4,7 +4,7 @@
 @tailwind utilities;
 
 .circular {
-  @apply bg-ascent rounded-full w-[40px] h-[40px] flex items-center justify-center;
+  @apply bg-ascent rounded-full w-[38px] h-[38px] flex items-center justify-center;
 }
 
 .set {

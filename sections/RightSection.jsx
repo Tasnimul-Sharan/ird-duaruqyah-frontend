@@ -40,10 +40,9 @@ const RightSection = () => {
   return (
     <div className="flex flex-col">
       <div className="flex flex-col items-center bg-white h-[80vh] overflow-auto rounded-2xl py-4 px-2 gap-3">
-        <h3>Settings</h3>
+        <h3 className="text-[20px] font-bold text-[#393939]">Settings</h3>
 
-        <div className="flex flex-col gap-2">
-          {/* Language */}
+        <div className="flex flex-col gap-2 font-normal text-[16px] text-[#868686]">
           <div>
             <div
               className={`set z-10 ${
@@ -53,7 +52,7 @@ const RightSection = () => {
             >
               <div className="circular">
                 <div>
-                  <Image src="/lan.png" alt="play" width={13} height={13} />
+                  <Image src="/lan.png" alt="play" width={24} height={24} />
                 </div>
               </div>
               <p>Language Settings</p>
@@ -70,7 +69,6 @@ const RightSection = () => {
             )}
           </div>
 
-          {/* general */}
           <div>
             <div
               className={`set z-10 ${
@@ -80,7 +78,7 @@ const RightSection = () => {
             >
               <div className="circular">
                 <div>
-                  <Image src="/gen.png" alt="play" width={13} height={13} />
+                  <Image src="/gen.png" alt="play" width={24} height={24} />
                 </div>
               </div>
               <p>General Settings</p>
@@ -136,7 +134,6 @@ const RightSection = () => {
             )}
           </div>
 
-          {/* Font */}
           <div>
             <div
               className={`set z-10 ${
@@ -148,7 +145,7 @@ const RightSection = () => {
             >
               <div className="circular">
                 <div>
-                  <Image src="/fon.png" alt="play" width={13} height={13} />
+                  <Image src="/fon.png" alt="play" width={24} height={24} />
                 </div>
               </div>
               <p>Font Settings</p>
@@ -230,7 +227,6 @@ const RightSection = () => {
             )}
           </div>
 
-          {/* Appearance */}
           <div>
             <div
               className={`set z-10 ${
@@ -240,7 +236,7 @@ const RightSection = () => {
             >
               <div className="circular">
                 <div>
-                  <Image src="/fon.png" alt="play" width={13} height={13} />
+                  <Image src="/fon.png" alt="play"width={24} height={24} />
                 </div>
               </div>
               <p>Appearance Settings</p>
@@ -273,3 +269,5 @@ const RightSection = () => {
 };
 
 export default RightSection;
+
+
