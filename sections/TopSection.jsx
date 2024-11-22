@@ -10,15 +10,16 @@ const TopSection = () => {
   };
 
   return (
-    <div className="flex items-center  justify-between w-full py-4 px-6 bg-gray-100">
-<h1 className="font-semibold text-2xl">Dua Page</h1>
-<div className="relative  lg:-mr-96 lg:ml-96 w-[371px] h-[52px]">
-  <input
-    type="text"
-    placeholder="Search by Dua Name"
-    className="w-full h-full pl-4 pr-10 border border-gray-300 rounded-md focus:outline-none"
-  />
-  <button className="absolute top-1/2 right-2 transform -translate-y-1/2">
+    <div className="flex items-center justify-between w-full py-4 px-6">
+      <h1 className="font-semibold text-2xl">Dua Page</h1>
+
+      <div className="relative w-[371px] h-[52px] flex-shrink-0  lg:ml-[31rem]">
+        <input
+          type="text" 
+          placeholder="Search by Dua Name"
+          className="w-full h-full pl-4 pr-10 border border-gray-300 rounded-md focus:outline-none"
+        />
+        <button className="absolute top-1/2 right-2 transform -translate-y-1/2">
           <Image
             src="/search-icon.png"
             alt="Search Icon"
@@ -26,9 +27,10 @@ const TopSection = () => {
             height={44}
             className="rounded-md"
           />
-  </button>
-</div>
+        </button>
+      </div>
 
+      {/* User Icon Section */}
       <div className="relative flex items-center">
         <div onClick={toggleModal} className="cursor-pointer">
           <Image

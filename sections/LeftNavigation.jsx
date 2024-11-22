@@ -12,7 +12,7 @@ const navItems = [
 
 const LeftNavigation = () => {
   return (
-    <div className="flex flex-col bg-white w-full h-[90vh] justify-between items-center p-4 rounded-2xl shadow-md">
+    <div className="flex flex-col bg-white w-full h-[90vh] justify-between items-center p-4 rounded-2xl">
       <div className="mb-32">
         <Image src="/logo.png" alt="Logo" width={73} height={73} />
       </div>
